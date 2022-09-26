@@ -42,6 +42,10 @@ class FetchActivity : AppCompatActivity() {
         openUrlConnection()
     }
 
+    /**
+     * Opening the Url connection to obtain the Json and parse in [parseJson],
+     * to build the list of items to display on [RecyclerArrayAdapter].
+     */
     private fun openUrlConnection() {
         val backgroundThread = Thread {
             try {
@@ -72,6 +76,10 @@ class FetchActivity : AppCompatActivity() {
         backgroundThread.start()
     }
 
+    /**
+     * Json string will be parsed and turned into the [JsonContentInfo]
+     * data class, for displaying onto the RecyclerView.
+     */
     private fun parseJson(jsonString : String) {
         try {
             val jsonResponseObject = JSONObject(jsonString)
@@ -89,6 +97,7 @@ class FetchActivity : AppCompatActivity() {
                 "Name : $nameObject"
             )
 
+            //The TreeMap will maintain the entries in ascending order of ID value
             when (listIdObject){
                 1 -> mListId1Responses[jsonContentInfo.responseId] = jsonContentInfo
                 2 -> mListId2Responses[jsonContentInfo.responseId] = jsonContentInfo
