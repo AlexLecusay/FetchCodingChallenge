@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fetch Coding Challenge</string>
+    <string name="app_header">Response List</string>
+    <string name="button_text">Display friends</string>
+</resources>

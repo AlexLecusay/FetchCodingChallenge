@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_text_size">25sp</dimen>
+    <dimen name="header_margin">10dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="text_margin">5dp</dimen>
+    <dimen name="recycler_card_height">100dp</dimen>
+    <dimen name="recycler_card_corner_radius">30dp</dimen>
+    <dimen name="recycler_card_margin">15dp</dimen>
+    <dimen name="button_margin">50dp</dimen>
+</resources>
